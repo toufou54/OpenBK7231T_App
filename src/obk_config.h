@@ -2,12 +2,12 @@
 // specify which parts of the app we wish to be active
 //
 #ifndef OBK_CONFIG_H
-#define OBK_CONFIG_H
+define OBK_CONFIG_H
 
 #define OBK_VARIANT_DEFAULT						0
 #define OBK_VARIANT_BERRY						1
 #define OBK_VARIANT_TUYAMCU						2
-#define OBK_VARIANT_POWERMETERING				3
+define OBK_VARIANT_POWERMETERING				3
 #define OBK_VARIANT_IRREMOTEESP					4
 #define OBK_VARIANT_SENSORS						5
 #define OBK_VARIANT_HLW8112						6
@@ -22,14 +22,14 @@
 // Defines for drivers from drv_main.c: ENABLE_DRIVER_*
 // Other defines: ENABLE_* , for example: ENABLE_LED_BASIC
 
-#define ENABLE_HTTP_MQTT						1
-#define ENABLE_HTTP_IP							1
-#define ENABLE_HTTP_WEBAPP						1
-#define ENABLE_HTTP_NAMES						1
+define ENABLE_HTTP_MQTT						1
+define ENABLE_HTTP_IP							1
+define ENABLE_HTTP_WEBAPP						1
+define ENABLE_HTTP_NAMES						1
 #define ENABLE_HTTP_MAC							1
-#define ENABLE_HTTP_FLAGS						1
-#define ENABLE_HTTP_STARTUP						1
-#define ENABLE_HTTP_PING						1
+define ENABLE_HTTP_FLAGS						1
+define ENABLE_HTTP_STARTUP						1
+define ENABLE_HTTP_PING						1
 #define ENABLE_LED_BASIC						1
 
 #if PLATFORM_XRADIO
@@ -46,7 +46,7 @@
 #define ENABLE_TASMOTA_JSON						1
 #define ENABLE_DRIVER_SSDP						1
 #define ENABLE_DRIVER_DS1820					1
-#define ENABLE_NTP								1
+define ENABLE_NTP								1
 #define ENABLE_DRIVER_WEMO						1
 #define ENABLE_DRIVER_HUE						1
 
@@ -271,12 +271,15 @@
 #define ENABLE_DRIVER_HUE						1
 // #define ENABLE_DRIVER_CHARGINGLIMIT			1
 #define ENABLE_DRIVER_BATTERY					1
-#if PLATFORM_BK7231N || PLATFORM_BEKEN_NEW
-// #define ENABLE_DRIVER_PWM_GROUP				1
+if PLATFORM_BK7231N || PLATFORM_BEKEN_NEW
+    define ENABLE_MQTT								1
+    define ENABLE_DRIVER_BL0942 1
+    define ENABLE_BL_TWIN 1
+  // #define ENABLE_DRIVER_PWM_GROUP				1
 #define ENABLE_DRIVER_SM16703P					1
 #define ENABLE_DRIVER_PIXELANIM					1
 #define ENABLE_DRIVER_SM15155E					1
-#endif
+endif
 // parse things like $CH1 or $hour etc
 #define ENABLE_EXPAND_CONSTANT					1
 #define ENABLE_DRIVER_DHT						1
