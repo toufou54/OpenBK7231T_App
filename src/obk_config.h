@@ -236,7 +236,7 @@
 
 #define ENABLE_DRIVER_BL0937 1
 
-#define ENABLE_DRIVER_BL0942 1
+//#define ENABLE_DRIVER_BL0942 1
 
 #define ENABLE_DRIVER_BL0942SPI 1
 
@@ -358,7 +358,7 @@
 
 #define ENABLE_DRIVER_BL0937 1
 
-#define ENABLE_DRIVER_BL0942 1
+//#define ENABLE_DRIVER_BL0942 1
 
 #define ENABLE_DRIVER_CSE7766 1
 
@@ -446,7 +446,7 @@
 
 #define ENABLE_DRIVER_BL0937 1
 
-#define ENABLE_DRIVER_BL0942 1
+//#define ENABLE_DRIVER_BL0942 1
 
 #define ENABLE_DRIVER_BL0942SPI 1
 
@@ -492,7 +492,8 @@
 
 #define ENABLE_MQTT 1
 
-#define ENABLE_DRIVER_BL0942 1
+//#define ENABLE_DRIVER_BL0942 1
+#define ENABLE_DRIVER_BL0942SPI 1
 
 #define ENABLE_BL_TWIN 1
 
@@ -859,6 +860,7 @@
 #define ENABLE_DRIVER_DHT 1
 
 #define ENABLE_DRIVER_BL0942 1
+#define ENABLE_DRIVER_BL0942SPI 1
 
 #define ENABLE_DRIVER_BL0937 1
 
@@ -942,7 +944,8 @@
 
 #define ENABLE_DRIVER_TUYAMCU 1
 
-#define ENABLE_DRIVER_BL0942 1
+//#define ENABLE_DRIVER_BL0942 1
+#define ENABLE_DRIVER_BL0942SPI 1
 
 #define ENABLE_DRIVER_BL0937 1
 
@@ -1082,7 +1085,7 @@
 
 // allow use two BL0942 on two ports +940 bytes
 
-// #define ENABLE_BL_TWIN 1
+#define ENABLE_BL_TWIN 1
 
 // allow moving average energy calculation +180 bytes
 
