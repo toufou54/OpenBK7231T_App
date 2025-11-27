@@ -46,7 +46,7 @@ define ENABLE_HTTP_PING						1
 #define ENABLE_TASMOTA_JSON						1
 #define ENABLE_DRIVER_SSDP						1
 #define ENABLE_DRIVER_DS1820					1
-define ENABLE_NTP								1
+#define ENABLE_NTP								1
 #define ENABLE_DRIVER_WEMO						1
 #define ENABLE_DRIVER_HUE						1
 
@@ -272,9 +272,10 @@ define ENABLE_NTP								1
 // #define ENABLE_DRIVER_CHARGINGLIMIT			1
 #define ENABLE_DRIVER_BATTERY					1
 if PLATFORM_BK7231N || PLATFORM_BEKEN_NEW
-    define ENABLE_MQTT								1
-    define ENABLE_DRIVER_BL0942 1
-    define ENABLE_BL_TWIN 1
+define ENABLE_MQTT								1
+define ENABLE_DRIVER_BL0942                     1
+define ENABLE_BL_TWIN                           1
+define ENABLE_NTP								1
   // #define ENABLE_DRIVER_PWM_GROUP				1
 #define ENABLE_DRIVER_SM16703P					1
 #define ENABLE_DRIVER_PIXELANIM					1
